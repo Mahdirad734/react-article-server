@@ -55,7 +55,7 @@ function ArticleP() {
   // ارسال مقاله به سرور با توجه به کیی هایی که در آبجکت سرور هست باید دیتا ارسال کنیم
   function handleCreateArticle() {
     axios.post("https://react-article-server.vercel.app", {
-      id: 9 ,
+      id: "",
       title: inputValue.title,
       readingTime: inputValue.readingTime,
       date: inputValue.date,
@@ -75,6 +75,7 @@ function ArticleP() {
             label=":عنوان مقاله جدید"
             handleChange={handleArticleValue}
           />
+     
           <InputArticle
             name="date"
             label=":تاریخ"
