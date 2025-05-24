@@ -16,7 +16,7 @@ function Home() {
 
     setIsLoading(true);
     axios
-      .get("http://localhost:8000/articles")
+      .get("https://react-article-server.vercel.app/")
       .then((result) => {
         setArticle(result.data);
         setIsLoading(false);

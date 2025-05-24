@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <div className={styled.footer}>
-      <h2 className={styled.title}>Footer site</h2>
+      <h2 className={styled.title}>  </h2>
 
 
       
