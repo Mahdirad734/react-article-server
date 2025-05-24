@@ -1,0 +1,22 @@
+.ArticleWrapper{
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 3px 4px #c1c1c1;
+  margin-bottom: 25px;
+  text-align: right;
+}
+.ArticleWrapper img{
+  width:100%;
+  height:auto;
+
+}
+.ArticleWrapper h3{
+  padding-right:20px;
+  padding-top: 10px;
+  font-size:20px;
+}
+.ArticleWrapper p{
+  padding:10px 20px ;
+  font-size: 17px;
+ 
+}

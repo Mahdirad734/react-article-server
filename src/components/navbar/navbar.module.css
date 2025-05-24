@@ -1,0 +1,25 @@
+.navSection{
+  box-shadow: 0px 2px 5px #ccc; 
+  
+}
+
+.navOption {
+  height: 65px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.navOption ul {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+ 
+}
+
+.navOption ul li {
+  font-size: 18px;
+
+}

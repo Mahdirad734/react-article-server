@@ -1,0 +1,16 @@
+.ArticlePTitle{
+  color: #373737;
+}
+.inputWrapper button{
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+  background-color: #4783de ;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0px;
+}
+.inputWrapper button:active{
+  background-color:#3672ca ;
+}

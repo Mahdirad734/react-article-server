@@ -1,0 +1,13 @@
+.footer{
+  text-align: center;
+  background-color: #414141;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.title{
+  color: rgb(210, 221, 229);
+}

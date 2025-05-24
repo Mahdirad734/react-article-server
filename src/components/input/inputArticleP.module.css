@@ -1,0 +1,18 @@
+.articleInput label{
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+
+}
+.articleInput label:first-child{
+  padding-top: 30px;
+}
+.articleInput input{
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  outline: none;
+  border: 1px solid #999;
+
+}
