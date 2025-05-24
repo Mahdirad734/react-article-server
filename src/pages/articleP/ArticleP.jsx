@@ -54,7 +54,7 @@ function ArticleP() {
   }
   // ارسال مقاله به سرور با توجه به کیی هایی که در آبجکت سرور هست باید دیتا ارسال کنیم
   function handleCreateArticle() {
-    axios.post("https://react-article-server.vercel.app/", {
+    axios.post("https://react-article-server.vercel.app", {
       id: "",
       title: inputValue.title,
       readingTime: inputValue.readingTime,
