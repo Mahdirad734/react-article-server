@@ -38,9 +38,7 @@ function Home() {
         ) : (
           <div className={styled.Articles}>
             {articles.map((value) => (
-        
               <Link key={value.id} to={`/api/article/${value.id}`}>
-                
                 <Article data={value} />
               </Link>
             ))}

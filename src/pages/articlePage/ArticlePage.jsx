@@ -14,7 +14,7 @@ function Articles() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`https://react-article-server.vercel.app/article${id}`)
+      .get(`https://react-article-server.vercel.app/api/articles/${id}`)
       .then((response) => {
         setArticleData(response.data);
         setIsLoading(false);
