@@ -1,20 +1,13 @@
-import data from "../../../data/db.json"; 
+import data from '../../../data/db.json'; // اگر پوشه data هم‌سطح api باشه
 
 export default function handler(req, res) {
-  const {
-    query: { id },
-    method,
-  } = req;
+  const { id } = req.query;
 
-  if (method === "GET") {
-    const article = data.articles.find((item) => item.id === parseInt(id));
-    
-    if (article) {
-      res.status(200).json(article);
-    } else {
-      res.status(404).json({ message: "مقاله پیدا نشد" });
-    }
+  const article = data.articles.find(item => item.id === parseInt(id));
+
+  if (article) {
+    res.status(200).json(article);
   } else {
-    res.status(405).json({ message: "متد مجاز نیست" });
+    res.status(404).json({ message: "مقاله پیدا نشد" });
   }
 }
