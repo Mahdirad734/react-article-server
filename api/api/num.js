@@ -1,5 +1,5 @@
 // api/articles/num.js
-import articlesData from '../data/db.json';
+import articlesData from '../../data/db.json';
 
 export default function handler(req, res) {
   if (req.method === 'GET') {
