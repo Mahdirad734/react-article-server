@@ -16,7 +16,7 @@ function Home() {
 
     setIsLoading(true);
     axios
-      .get("https://react-article-server.vercel.app")
+      .get("https://react-article-server.vercel.app/api/articles")
       .then((result) => {
         setArticle(result.data);
         setIsLoading(false);
@@ -40,7 +40,7 @@ function Home() {
             {articles.map((value) => (
         
               <Link key={value.id} to={`/article/${value.id}`}>
-                {console.log(value)}
+                
                 <Article data={value} />
               </Link>
             ))}
