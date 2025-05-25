@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "id": "1",
+      "id": 1 ,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/03/30/17/41/javascript-2189147_1280.png",
       "title": " عنوان مقاله اول",
       "readingTime": 5,

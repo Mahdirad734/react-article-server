@@ -10,7 +10,7 @@ function Articles() {
   const { id } = useParams();
   const [ArticleData, setArticleData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-
+  console.log({id})
   useEffect(() => {
     setIsLoading(true);
     axios
