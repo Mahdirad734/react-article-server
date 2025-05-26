@@ -54,8 +54,8 @@ function ArticleP() {
   }
   // ارسال مقاله به سرور با توجه به کیی هایی که در آبجکت سرور هست باید دیتا ارسال کنیم
   function handleCreateArticle() {
-    axios.post("https://react-article-server.vercel.app/api/articles", {
-      id: 9,
+    axios.post("https://6834161c464b499636013e01.mockapi.io/articles", {
+      id: inputValue.numberArticle,
       title: inputValue.title,
       readingTime: inputValue.readingTime,
       date: inputValue.date,
@@ -63,7 +63,6 @@ function ArticleP() {
       imageUrl: inputValue.imageURL,
       content: inputValue.message,
     });
-  }
 
   return (
     <>
@@ -79,6 +78,11 @@ function ArticleP() {
           <InputArticle
             name="date"
             label=":تاریخ"
+            handleChange={handleArticleValue}
+          />
+          <InputArticle
+            name="numberArticle"
+            label=":شماره مقاله"
             handleChange={handleArticleValue}
           />
           <InputArticle

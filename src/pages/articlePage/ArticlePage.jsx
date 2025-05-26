@@ -14,7 +14,7 @@ function Articles() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`https://react-article-server.vercel.app/api/articles/${id}`)
+      .get(`https://6834161c464b499636013e01.mockapi.io/articles/${id}`)
       .then((response) => {
         setArticleData(response.data);
         setIsLoading(false);

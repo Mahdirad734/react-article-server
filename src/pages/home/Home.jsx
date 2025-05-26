@@ -16,7 +16,7 @@ function Home() {
 
     setIsLoading(true);
     axios
-      .get("https://react-article-server.vercel.app/api/articles")
+      .get("https://6834161c464b499636013e01.mockapi.io/articles")
       .then((result) => {
         setArticle(result.data);
         setIsLoading(false);
@@ -38,7 +38,7 @@ function Home() {
         ) : (
           <div className={styled.Articles}>
             {articles.map((value) => (
-              <Link key={value.id} to={`/article/${value.id}`}>
+              <Link key={value.id} to={`/articles/${value.id}`}>
                 <Article data={value} />
               </Link>
             ))}
