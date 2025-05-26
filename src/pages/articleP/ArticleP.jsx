@@ -7,6 +7,7 @@ import axios from "axios";
 
 function ArticleP() {
   const [inputValue, setInputValue] = useState({
+    id: "",
     title: "",
     date: "",
     readingTime: "",
@@ -63,7 +64,7 @@ function ArticleP() {
       imageUrl: inputValue.imageURL,
       content: inputValue.message,
     });
-
+  }
   return (
     <>
       <Navbar />
